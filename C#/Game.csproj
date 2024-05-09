@@ -43,13 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Palindrome.cs" />
+    <Compile Include="AnimalsFight\AnimalsFights.cs" />
+    <Compile Include="AnimalsFight\AppDatabase.cs" />
+    <Compile Include="AnimalsFight\Fighter.cs" />
+    <Compile Include="AnimalsFight\Team.cs" />
+    <Compile Include="Palindrome\Palindrome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RockPaperScissor.cs" />
+    <Compile Include="RockPaperScissor\RockPaperScissor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="AnimalsFight\DataBase.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Game
 {
@@ -16,6 +15,7 @@ namespace Game
             {
                 Console.WriteLine("1.RockPaperScissor");
                 Console.WriteLine("2.Palindrome");
+                Console.WriteLine("3.AnimalsFight");
 
                 command = Console.ReadLine();
 
@@ -26,6 +26,9 @@ namespace Game
                         break;
                     case "2":
                         Palindrome.Play();
+                        break;
+                    case "3":
+                        AnimalsFights.Play();
                         break;
 
                 }
