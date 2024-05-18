@@ -1,4 +1,4 @@
-package main
+package rockPaperScissor
 
 import (
 	"bufio"
@@ -38,7 +38,7 @@ func (*RockPaperScissor) Play() {
 
 		randomNumber := rand.Intn(2) + 1
 
-		result, err := CheckWinner(userChoice, randomNumber)
+		result, err := checkWinner(userChoice, randomNumber)
 
 		if err == nil {
 			if result == 0 {
@@ -62,7 +62,7 @@ func (*RockPaperScissor) Play() {
 	}
 }
 
-func CheckWinner(userChoice int, compChoice int) (int, error) {
+func checkWinner(userChoice int, compChoice int) (int, error) {
 
 	choices := map[int]string{1: "Rock", 2: "Paper", 3: "Scissor"}
 

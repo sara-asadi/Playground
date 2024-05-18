@@ -1,4 +1,4 @@
-package main
+package palindrome
 
 import (
 	"bufio"
@@ -22,7 +22,7 @@ func (*Palindrome) Play() {
 
 		word := stdScanner.Text()
 
-		result := CheckResult(word)
+		result := checkResult(word)
 
 		if result {
 			score++
@@ -39,7 +39,7 @@ func (*Palindrome) Play() {
 
 }
 
-func CheckResult(word string) bool {
+func checkResult(word string) bool {
 	wordRunes := []rune(word)
 	var reversedWord []rune
 
